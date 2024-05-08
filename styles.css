@@ -1,28 +1,24 @@
 :root {
-    --branco-principal: #030002c5;
-    --cinza-secundario: #9bfafadc;
-    --botao-azul: #61cccc;
-    --cor-de-fundo: #9feee7;
+    --branco-principal: white; 
+    --cinza-secundario: grey; 
+    --botao-azul: blue;
+    --cor-de-fundo: black;
     --fonte-principal: 'Inter';
-    --botao-azul-efeito: #000000;
+    --botao-azul-efeito: blue;
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
-    fon
-    .container__botao {
-        background-color: var(--botao-azul);
-        border-radius: 5px;
-        padding: 1em;
-        color: var(--branco-pt-family: var(--fonte-principal);
+    font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
 }
 
-* {
+*{
     margin: 0;
-    padding: 0;
+    padding: o;
+
 }
 
 .principal {
@@ -60,7 +56,6 @@ body {
 }
 
 .container__titulo {
-
     font-size: 28px;
     font-weight: 700;
 }
@@ -79,7 +74,6 @@ body {
 
 .secundario {
     align-items: center;
-
     margin: 0 10em;
 }
 
@@ -95,8 +89,7 @@ body {
 }
 
 .secundario__botao {
-    display: inline-block
-    ;
+    display: inline-block;
     margin-top: 1em;
 }
 
@@ -127,7 +120,11 @@ body {
 
 .rodape {
     text-align: center;
-    margin: 5em 3em;
+    margin: 0 em 3em;
+}
+
+.rodape__logo {
+    margin bottom: 2em;
 }
 
 .rodape__lista {
@@ -137,27 +134,22 @@ body {
     margin-top: 1em;
 }
 
-.lista__link a{
-    text-decoration: none;
-    color: var(--branco-principal);
+.lista__link a:hover {
+    color: var(--botao-azul);
     margin-left: 1em;
 }
 
+.lista__link a:active {
+    color:green;
+}
+
+.container__botao:hover { 
+    background-color: var(--botao-azul-efeito); 
+    color: var(--cor-de-fundo);
+}
+
 .rodape__texto {
-    margin: 1em 0;
+    margin: 2em 0;
     color: var(--cinza-secundario);
     font-size: 14px;
-}
-
-.lista__link a:hover {
-    color: var(--botao-azul);
-}
-
-.lista__link a:active {
-    color: purple;
-}
-
-.container__botao:hover {
-    background-color: var(--botao-azul-efeito);
-    color: var(--cor-de-fundo);
 }
